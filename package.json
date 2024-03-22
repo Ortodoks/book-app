@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Cool book app",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "start": "live-server",
-    "build": "rollup"
+    "build": "rollup -c --watch"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,12 @@
   },
   "homepage": "https://github.com/Ortodoks/book-app#readme",
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "rollup": "^4.13.0"
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "eslint": "^8.33.0",
+    "rollup": "^3.14.0",
+    "rollup-plugin-import-css": "^3.1.0"
+  },
+  "dependencies": {
+    "on-change": "^4.0.2"
   }
 }

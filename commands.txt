@@ -1,0 +1,39 @@
+/*Сразу выполняются синхронные операции, а затем асинхронные.
+Промисы имеюит приоритет над Таймерами, потому что они в Event Loop 
+помещаются в Microtasks Queue, а таймеры в Callback Queue.
+когда Происходит Event Loop то он в первую очередь обращается в 
+Microtasks Queue, и перемещает задачу в Stack и так каждый цикл если есть
+задачи в Microtask Queue, когда задачи закончились в Microtask Queue, то Event Loop
+проверяет Callback Queue и перемещает задачу в Stack. пока есть задачи в 
+Microtask Queue, То блокируются задачи в Callback Queue.
+
+Queue = Очередь
+Microtask = Микрозадача
+Callback = Обратный вызов
+Event Loop = Цикл событий
+Promise = Обещать
+resolve = решать
+reject = отклонять
+fetch = принести
+then = затем
+Instant = мгновенный
+catch = ловить
+try = пытаться
+finally = окончательно
+throw = бросать
+await = ждите
+async = асинхронный
+defer = отложить
+target = цель
+event = событие
+pageYOffset = страница Смещение по оси Y
+behavior = поведение
+smooth = гладкий
+capture = захватывать
+inner = внутренний
+Sibling = Брат или Сестра
+bundle = пучок
+preventDefault = предотвратить по умолчанию
+'https://dummyjson.com/products/'
+Promise.allSettled = обещаю, что все решено
+*/
